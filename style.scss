@@ -1,0 +1,108 @@
+body {
+  font-family: 'Droid Serif';
+}
+h1 {
+  font-family: 'Special Elite';
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+h3{
+  font-family: 'Special Elite';
+  font-size: 36px;
+  font-weight: bold;
+  color: #E23744;
+  margin-top: 4px;
+}
+h5{
+   text-decoration: underline;
+}
+p {
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+svg {
+  margin: 0 auto;
+  display: block;
+}
+path, circle {
+  stroke-width: 0.25px;
+  stroke: #ccc;
+  fill: none;
+  stroke-linecap: round;
+  transition: all 0.5s;
+}
+.mask {
+  stroke-width: 2px;
+  stroke: #000;
+  fill: #fff;
+}
+.sun {
+  // fill: #ffae00;
+  stroke: #ffae00;
+  stroke-width: 0;
+  stroke-dasharray: 1250;
+  stroke-dashoffset: 1245;
+}
+.sunfill {
+  fill: #ffae00;
+}
+.ray {
+  stroke: #ffae00;
+  stroke-width: 20px;
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  &.thin {
+    stroke-width: 6px;
+  }
+}
+
+
+.poem-wrap {
+  max-width: 600px;
+  margin: 15px auto;
+  // margin-top: 233px;
+}
+.poem-title {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: -110px;
+  position: relative;
+  top: 15px;
+  opacity: 0;
+}
+.stanza {
+  font-size: 20px;
+  line-height: 40px;
+  color: #666;
+  .new-line {
+    display: block;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+  }
+}
+.header-w {
+  padding-bottom: 25px;
+}
+footer {
+  margin: 0 auto;
+  margin-top: 45px;
+  text-align: right;
+  border-top: 1px solid #ddd;
+  max-width: 600px;
+  padding: 25px;
+  a {
+    color: #ffae00;
+  }
+}
+
+
+
+// for the randome circles
+.rc--random-circle {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+}
